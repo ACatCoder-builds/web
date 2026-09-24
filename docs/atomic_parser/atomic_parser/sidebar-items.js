@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"enum":["AtomErrorKind"],"struct":["Atom","AtomError"]};

@@ -1,0 +1,1 @@
+rd_("BkAt what index the error began (starts at 0)nA parsed atom.AoReturns the argument unchanged.00BaCalls <code>U::from(self)</code>.00AjWhat kind of error happendAjParse an input into atoms.BaAn error while parsing the atoms.CnThe file ends before the atom could end, usually caused by \xe2\x80\xa6BcA crate to parse files using atoms.")
