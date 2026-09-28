@@ -1,4 +1,5 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="A crate to parse files using atoms."><title>atomic_parser - Rust</title><script>if(window.location.protocol!=="file:")document.head.insertAdjacentHTML("beforeend","SourceSerif4-Regular-6b053e98.ttf.woff2,FiraSans-Italic-81dc35de.woff2,FiraSans-Regular-0fe48ade.woff2,FiraSans-MediumItalic-ccf7e434.woff2,FiraSans-Medium-e1aa3f0a.woff2,SourceCodePro-Regular-8badfe75.ttf.woff2,SourceCodePro-Semibold-aa29a496.ttf.woff2".split(",").map(f=>`<link rel="preload" as="font" type="font/woff2"href="../static.files/${f}">`).join(""))</script><link rel="stylesheet" href="../static.files/normalize-9960930a.css"><link rel="stylesheet" href="../static.files/rustdoc-17e0aaed.css"><meta name="rustdoc-vars" data-root-path="../" data-static-root-path="../static.files/" data-current-crate="atomic_parser" data-themes="" data-resource-suffix="" data-rustdoc-version="1.96.0 (ac68faa20 2026-05-25)" data-channel="1.96.0" data-search-js="search-b5634cc7.js" data-stringdex-js="stringdex-2da4960a.js" data-settings-js="settings-170eb4bf.js" ><script src="../static.files/storage-41dd4d93.js"></script><script defer src="../crates.js"></script><script defer src="../static.files/main-5013f961.js"></script><noscript><link rel="stylesheet" href="../static.files/noscript-f7c3ffd8.css"></noscript><link rel="alternate icon" type="image/png" href="../static.files/favicon-32x32-eab170b8.png"><link rel="icon" type="image/svg+xml" href="../static.files/favicon-044be391.svg"></head><body class="rustdoc mod crate"><a class="skip-main-content" href="#main-content">Skip to main content</a><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><rustdoc-topbar><h2><a href="#">Crate atomic_parser</a></h2></rustdoc-topbar><nav class="sidebar"><div class="sidebar-crate"><h2><a href="../atomic_parser/index.html">atomic_<wbr>parser</a><span class="version">1.0.2</span></h2></div><div class="sidebar-elems"><ul class="block"><li><a id="all-types" href="all.html">All Items</a></li></ul><section id="rustdoc-toc"><h3><a href="#">Sections</a></h3><ul class="block top-toc"><li><a href="#what-is-an-atom" title="What is an atom?">What is an atom?</a></li><li><a href="#example" title="Example">Example</a></li></ul><h3><a href="#structs">Crate Items</a></h3><ul class="block"><li><a href="#structs" title="Structs">Structs</a></li><li><a href="#enums" title="Enums">Enums</a></li></ul></section><div id="rustdoc-modnav"></div></div></nav><div class="sidebar-resizer" title="Drag to resize sidebar"></div><main><div class="width-limiter"><section id="main-content" class="content" tabindex="-1"><div class="main-heading"><h1>Crate <span>atomic_<wbr>parser</span>&nbsp;<button id="copy-path" title="Copy item path to clipboard">Copy item path</button></h1><rustdoc-toolbar></rustdoc-toolbar><span class="sub-heading"><a class="src" href="../src/atomic_parser/lib.rs.html#1-477">Source</a> </span></div><details class="toggle top-doc" open><summary class="hideme"><span>Expand description</span></summary><div class="docblock"><p>A crate to parse files using atoms.</p>
+<!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><meta name="generator" content="rustdoc"><meta name="description" content="A crate to parse files using atoms, or to create atoms."><title>atomic_parser - Rust</title><script>if(window.location.protocol!=="file:")document.head.insertAdjacentHTML("beforeend","SourceSerif4-Regular-6b053e98.ttf.woff2,FiraSans-Italic-81dc35de.woff2,FiraSans-Regular-0fe48ade.woff2,FiraSans-MediumItalic-ccf7e434.woff2,FiraSans-Medium-e1aa3f0a.woff2,SourceCodePro-Regular-8badfe75.ttf.woff2,SourceCodePro-Semibold-aa29a496.ttf.woff2".split(",").map(f=>`<link rel="preload" as="font" type="font/woff2"href="../static.files/${f}">`).join(""))</script><link rel="stylesheet" href="../static.files/normalize-9960930a.css"><link rel="stylesheet" href="../static.files/rustdoc-17e0aaed.css"><meta name="rustdoc-vars" data-root-path="../" data-static-root-path="../static.files/" data-current-crate="atomic_parser" data-themes="" data-resource-suffix="" data-rustdoc-version="1.96.0 (ac68faa20 2026-05-25)" data-channel="1.96.0" data-search-js="search-b5634cc7.js" data-stringdex-js="stringdex-2da4960a.js" data-settings-js="settings-170eb4bf.js" ><script src="../static.files/storage-41dd4d93.js"></script><script defer src="../crates.js"></script><script defer src="../static.files/main-5013f961.js"></script><noscript><link rel="stylesheet" href="../static.files/noscript-f7c3ffd8.css"></noscript><link rel="alternate icon" type="image/png" href="../static.files/favicon-32x32-eab170b8.png"><link rel="icon" type="image/svg+xml" href="../static.files/favicon-044be391.svg"></head><body class="rustdoc mod crate"><a class="skip-main-content" href="#main-content">Skip to main content</a><!--[if lte IE 11]><div class="warning">This old browser is unsupported and will most likely display funky things.</div><![endif]--><rustdoc-topbar><h2><a href="#">Crate atomic_parser</a></h2></rustdoc-topbar><nav class="sidebar"><div class="sidebar-crate"><h2><a href="../atomic_parser/index.html">atomic_<wbr>parser</a><span class="version">1.1.0</span></h2></div><div class="sidebar-elems"><ul class="block"><li><a id="all-types" href="all.html">All Items</a></li></ul><section id="rustdoc-toc"><h3><a href="#">Sections</a></h3><ul class="block top-toc"><li><a href="#what-is-an-atom" title="What is an atom?">What is an atom?</a></li><li><a href="#example" title="Example">Example</a><ul><li><a href="#parsing-atoms" title="Parsing atoms">Parsing atoms</a></li><li><a href="#building-atoms" title="Building atoms">Building atoms</a></li></ul></li></ul><h3><a href="#structs">Crate Items</a></h3><ul class="block"><li><a href="#structs" title="Structs">Structs</a></li><li><a href="#enums" title="Enums">Enums</a></li><li><a href="#functions" title="Functions">Functions</a></li></ul></section><div id="rustdoc-modnav"></div></div></nav><div class="sidebar-resizer" title="Drag to resize sidebar"></div><main><div class="width-limiter"><section id="main-content" class="content" tabindex="-1"><div class="main-heading"><h1>Crate <span>atomic_<wbr>parser</span>&nbsp;<button id="copy-path" title="Copy item path to clipboard">Copy item path</button></h1><rustdoc-toolbar></rustdoc-toolbar><span class="sub-heading"><a class="src" href="../src/atomic_parser/lib.rs.html#1-330">Source</a> </span></div><details class="toggle top-doc" open><summary class="hideme"><span>Expand description</span></summary><div class="docblock"><p>A crate to parse files using atoms, or to create
+atoms.</p>
 <h2 id="what-is-an-atom"><a class="doc-anchor" href="#what-is-an-atom">§</a>What is an atom?</h2>
 <p><em>Atoms</em> are a way for a file to store data.
 A file like this can be represented as a
@@ -22,13 +23,80 @@ size of the atom, so the parser knows where
 each atom ends and a new atom begins.</p>
 <p>An example of a file format that works like this is MP4. Note that
 this parser is not recommended for parsing mp4.</p>
-<h2 id="example"><a class="doc-anchor" href="#example">§</a>Example</h2>
+<h2 id="example"><a class="doc-anchor" href="#example">§</a>Example</h2><h3 id="parsing-atoms"><a class="doc-anchor" href="#parsing-atoms">§</a>Parsing atoms</h3>
+<p>Make sure you have the <code>read</code> feature enabled, though
+it is enabled by default.</p>
+<p>Minimal example:</p>
+
 <div class="example-wrap ignore"><a href="#" class="tooltip" title="This example is not tested">ⓘ</a><pre class="rust rust-example-rendered"><code><span class="kw">use </span>std::fs::File;
 <span class="kw">use </span>std::io::Read;
 <span class="kw">use </span>atomic_parser::Atom;
 
-<span class="kw">let </span><span class="kw-2">mut </span>file = File::open(<span class="string">"input.hex"</span>)<span class="question-mark">?</span>;
+<span class="kw">let </span><span class="kw-2">mut </span>file = File::open(<span class="string">"input.hex"</span>).expect(<span class="string">"failed to open file."</span>);
 <span class="kw">let </span><span class="kw-2">mut </span>value = <span class="macro">vec!</span>[];
-file.read_to_end(<span class="kw-2">&amp;mut </span>value)<span class="question-mark">?</span>;
-<span class="macro">println!</span>(<span class="string">"{:?}"</span>, Atom::parse(<span class="kw-2">&amp;</span>value, <span class="kw-2">&amp;</span>[])<span class="question-mark">?</span>);
-<span class="prelude-val">Ok</span>(())</code></pre></div></div></details><h2 id="structs" class="section-header">Structs<a href="#structs" class="anchor">§</a></h2><dl class="item-table"><dt><a class="struct" href="struct.Atom.html" title="struct atomic_parser::Atom">Atom</a></dt><dd>A parsed atom.</dd><dt><a class="struct" href="struct.AtomError.html" title="struct atomic_parser::AtomError">Atom<wbr>Error</a></dt><dd>An error while parsing the atoms.</dd></dl><h2 id="enums" class="section-header">Enums<a href="#enums" class="anchor">§</a></h2><dl class="item-table"><dt><a class="enum" href="enum.AtomErrorKind.html" title="enum atomic_parser::AtomErrorKind">Atom<wbr>Error<wbr>Kind</a></dt></dl></section></div></main></body></html>
+file.read_to_end(<span class="kw-2">&amp;mut </span>value).expect(<span class="string">"failed to read file."</span>);
+<span class="macro">println!</span>(<span class="string">"{:?}"</span>, Atom::parse(<span class="kw-2">&amp;</span>value, <span class="kw-2">&amp;</span>[]).expect(<span class="string">"Atoms are incorrect"</span>));</code></pre></div>
+<p>Or, if we want to ignore <code>skip</code> atoms:</p>
+
+<div class="example-wrap ignore"><a href="#" class="tooltip" title="This example is not tested">ⓘ</a><pre class="rust rust-example-rendered"><code><span class="kw">use </span>std::fs::File;
+<span class="kw">use </span>std::io::Read;
+<span class="kw">use </span>atomic_parser::Atom;
+
+<span class="kw">let </span><span class="kw-2">mut </span>file = File::open(<span class="string">"input.hex"</span>).expect(<span class="string">"failed to open file."</span>);
+<span class="kw">let </span><span class="kw-2">mut </span>value = <span class="macro">vec!</span>[];
+file.read_to_end(<span class="kw-2">&amp;mut </span>value).expect(<span class="string">"failed to read file."</span>);
+<span class="macro">println!</span>(<span class="string">"{:?}"</span>, Atom::parse(<span class="kw-2">&amp;</span>value, <span class="kw-2">&amp;</span>[[<span class="string">b's'</span>, <span class="string">b'k'</span>, <span class="string">b'i'</span>, <span class="string">b'p'</span>]]).expect(<span class="string">"Atoms are incorrect"</span>));</code></pre></div>
+<p>We can also ignore multiple atoms, e.g. a <code>skip</code> and a <code>meta</code> atom:</p>
+
+<div class="example-wrap ignore"><a href="#" class="tooltip" title="This example is not tested">ⓘ</a><pre class="rust rust-example-rendered"><code><span class="kw">use </span>std::fs::File;
+<span class="kw">use </span>std::io::Read;
+<span class="kw">use </span>atomic_parser::Atom;
+
+<span class="kw">let </span><span class="kw-2">mut </span>file = File::open(<span class="string">"input.hex"</span>).expect(<span class="string">"failed to open file."</span>);
+<span class="kw">let </span><span class="kw-2">mut </span>value = <span class="macro">vec!</span>[];
+file.read_to_end(<span class="kw-2">&amp;mut </span>value).expect(<span class="string">"failed to read file."</span>);
+<span class="macro">println!</span>(<span class="string">"{:?}"</span>, Atom::parse(<span class="kw-2">&amp;</span>value, <span class="kw-2">&amp;</span>[[<span class="string">b's'</span>, <span class="string">b'k'</span>, <span class="string">b'i'</span>, <span class="string">b'p'</span>], [<span class="string">b'm'</span>, <span class="string">b'e'</span>, <span class="string">b't'</span>, <span class="string">b'a'</span>]]).expect(<span class="string">"Atoms are incorrect"</span>));</code></pre></div><h3 id="building-atoms"><a class="doc-anchor" href="#building-atoms">§</a>Building atoms</h3>
+<p>Make sure you have the <code>write</code> feature enable.
+Run:</p>
+<div class="example-wrap"><pre class="language-bash"><code>cargo add atomic_parser -F write</code></pre></div>
+<p>Minimal example:</p>
+
+<div class="example-wrap"><pre class="rust rust-example-rendered"><code><span class="kw">use </span>atomic_parser::Atom;
+<span class="kw">use </span>atomic_parser::atoms_into_bytes;
+
+<span class="kw">let </span>input = <span class="macro">vec!</span>[
+    Atom {
+        name: [<span class="string">b'a'</span>, <span class="string">b't'</span>, <span class="string">b'0'</span>, <span class="string">b'1'</span>],
+        payload: <span class="macro">vec!</span>[
+            <span class="number">0x01</span>, <span class="number">0x02</span>, <span class="number">0x03</span>, <span class="number">0x04</span>,
+        ],
+    },
+    Atom {
+        name: [<span class="string">b'a'</span>, <span class="string">b't'</span>, <span class="string">b'0'</span>, <span class="string">b'2'</span>],
+        payload: <span class="macro">vec!</span>[
+           <span class="number">0x01</span>, <span class="number">0x02</span>, <span class="number">0x03</span>, <span class="number">0x04</span>,
+        ],
+    },
+    Atom {
+        name: [<span class="string">b'a'</span>, <span class="string">b't'</span>, <span class="string">b'0'</span>, <span class="string">b'3'</span>],
+        payload: <span class="macro">vec!</span>[
+            <span class="number">0x01</span>, <span class="number">0x02</span>, <span class="number">0x03</span>, <span class="number">0x04</span>,
+        ],
+    },
+    Atom {
+        name: [<span class="string">b'a'</span>, <span class="string">b't'</span>, <span class="string">b'0'</span>, <span class="string">b'4'</span>],
+        payload: <span class="macro">vec!</span>[
+            <span class="number">0x01</span>, <span class="number">0x02</span>, <span class="number">0x03</span>, <span class="number">0x04</span>,
+        ],
+    },
+    Atom {
+        name: [<span class="string">b'a'</span>, <span class="string">b't'</span>, <span class="string">b'0'</span>, <span class="string">b'5'</span>],
+        payload: <span class="macro">vec!</span>[
+            <span class="number">0x01</span>, <span class="number">0x02</span>, <span class="number">0x03</span>, <span class="number">0x04</span>,
+        ],
+    }
+];
+
+<span class="kw">let </span>bytes = atoms_into_bytes(input);
+<span class="macro">println!</span>(<span class="string">"{:#?}"</span>, bytes);
+</code></pre></div></div></details><h2 id="structs" class="section-header">Structs<a href="#structs" class="anchor">§</a></h2><dl class="item-table"><dt><a class="struct" href="struct.Atom.html" title="struct atomic_parser::Atom">Atom</a></dt><dd>A parsed atom.</dd><dt><a class="struct" href="struct.AtomError.html" title="struct atomic_parser::AtomError">Atom<wbr>Error</a></dt><dd>An error while parsing the atoms.</dd></dl><h2 id="enums" class="section-header">Enums<a href="#enums" class="anchor">§</a></h2><dl class="item-table"><dt><a class="enum" href="enum.AtomErrorKind.html" title="enum atomic_parser::AtomErrorKind">Atom<wbr>Error<wbr>Kind</a></dt></dl><h2 id="functions" class="section-header">Functions<a href="#functions" class="anchor">§</a></h2><dl class="item-table"><dt><a class="fn" href="fn.atoms_into_bytes.html" title="fn atomic_parser::atoms_into_bytes">atoms_<wbr>into_<wbr>bytes</a></dt><dd>Turns a vector of atoms into a vector of bytes.</dd></dl></section></div></main></body></html>

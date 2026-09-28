@@ -1,1 +1,1 @@
-window.SIDEBAR_ITEMS = {"enum":["AtomErrorKind"],"struct":["Atom","AtomError"]};
+window.SIDEBAR_ITEMS = {"enum":["AtomErrorKind"],"fn":["atoms_into_bytes"],"struct":["Atom","AtomError"]};
